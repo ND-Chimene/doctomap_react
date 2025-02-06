@@ -24,7 +24,7 @@ function Home() {
         {doctors.length > 0 ? doctors.map((doctor) => (
             <a href={`/doctor/${doctor.id}`} className="flex flex-col justify-center items-center gap-3 border p-4 rounded-md bg-zinc-100" key={doctor.id}>
                 <img className="w-20 " src={doctor.image} alt="{doctor.firstname} {doctor.lastname}}" />
-                    <h2>{doctor.firstname} {doctor.lastname} - {doctor.speciality}</h2>
+                <h2 className="text-xl">{doctor.firstname} {doctor.lastname} - {doctor.speciality}</h2>
                 <div>
                     <p>{doctor.address}, {doctor.zip} {doctor.city}</p>
                     <p>{doctor.phone}</p>
