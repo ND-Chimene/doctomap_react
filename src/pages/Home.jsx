@@ -27,7 +27,7 @@ function Home() {
                 <h2 className="text-xl">{doctor.firstname} {doctor.lastname} - {doctor.speciality}</h2>
                 <div>
                     <p>{doctor.address}, {doctor.zip} {doctor.city}</p>
-                    <p>{doctor.phone}</p>
+                    <p>Tel: {doctor.phone}</p>
                 </div>
             </a>
         )) : <p>Aucun docteur n&apos;est disponible pour le moment</p>}
